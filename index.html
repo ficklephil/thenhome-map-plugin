@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Then Home Map Plugin</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="css/spike_style.css" />
+
+    <!-- JS Libaries -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA5Zhn0d70pprD2K2ogELhYwmJy_N32le4&sensor=false">
+    </script>
+    <script type="text/javascript" src="src/thenhome-map-plugin.js"></script>
+
+</head>
+<body>
+<div style="z-index:3; position:absolute; top:170px;left:200px;">x</div>
+<div class='search-layer'>
+    <!--<input class='location-input' type='text' value='hounslow'>-->
+    <!--<input type="button" value="Let's go!" onclick="searchByLocation()">-->
+    <!--<input type="button" value="Area Search" onclick="areaSearch()">-->
+
+    <label >Min Price : </label>
+    <input class='min-price' type="text" value='0'>
+    <label >Max Price : </label>
+    <input class='max-price' type="text" value='2000000'>
+    <label class='update-date' >Start Date : </label>
+    <input class='updated-min' type="text" value='1371272400'>
+    <!--<input type="date" class='updated-min' name="updated-min">-->
+    <!--<input type="text" id="datepicker" />-->
+
+    <input type="button" value="Next" onclick="next()">
+    <input type="button" value="Previous" onclick="previous()">
+    <label class='page-number-display'>Page 1 / 7</label>
+    <label class='results-number-display'>Results Number</label>
+
+</div>
+
+    <!-- Plugin Code -->
+
+    <div class="display-layer"/>
+    <div style="z-index:0; position:relative; top:0; " id="map-canvas"/>
+    <!-- Plugin Code -->
+
+</body>
+</html>

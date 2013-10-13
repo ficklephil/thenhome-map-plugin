@@ -1,0 +1,136 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+
+.item-container{
+	border:1px solid red;
+	background-color:#99cc00;
+	height:80px;
+	width:56px;
+}
+
+.display-layer{
+
+    z-index:2;
+    /*position:absolute;*/
+    /*top:0px;*/
+    /*left:0px;*/
+    border:1px solid red;
+    width:100%;
+    height:100%
+}
+
+.search-layer{
+    z-index:1000;
+    /*position:absolute;*/
+    /*border:1px solid red;*/
+    /*left:100px;*/
+    background-color: #fafafa;
+    height:28px;
+}
+
+.item-dot{
+    z-index:2;
+    position:absolute;
+
+    border-radius: 50%;
+    background-color: #777777;
+    width: 10px;
+    height: 10px;
+}
+
+.item-box{
+    z-index:2;
+    position:absolute;
+    border:1px solid #efefef;
+    box-shadow: 2px 2px 5px #888888;
+    background-color: #efefef;
+    width: 84px;
+    height: 92px;
+    margin-top:-100px;
+    margin-left:-92px;
+}
+
+.item-box:hover{
+    z-index:2;
+    position:absolute;
+    border:1px solid #efefef;
+    box-shadow: 2px 2px 5px #888888;
+    background-color: #ffcc00;
+    width: 84px;
+    height: 92px;
+    margin-top:-100px;
+    margin-left:-92px;
+}
+
+.grid-item{
+    z-index:10;
+    position:absolute;
+    width:2px;
+    height:2px;
+    border:1px solid red;
+}
+
+.house{
+
+
+    z-index:2;
+    position:absolute;
+
+    border-radius: 50%;
+    background-color: #99cc00;
+    width: 10px;
+    height: 10px;
+
+}
+
+.item-image{
+    border:0px solid green;
+    height:60px;
+    padding:4px;
+}
+
+.item-image img{
+    border:0px solid blue;
+    width:76px;
+    height:58px;
+}
+
+.item-data-container{
+
+    border:0px solid green;
+    /*padding-right:2px;*/
+}
+
+.item-data-field-one{
+    /*border:1px solid blue;*/
+    margin-left:4px;
+    float:left;
+}
+
+.item-data-field-two{
+    /*border:1px solid red;*/
+    margin-right:2px;
+    float:right;
+}
+
+.flat{
+    z-index:2;
+    position:absolute;
+
+    border-radius: 50%;
+    background-color: #ffcc00;
+    width: 10px;
+    height: 10px;
+}
+
+.price{
+    position:absolute;
+    top:10px;
+}
+
+.beds{
+    position:absolute;
+    top:50px;
+}
+
